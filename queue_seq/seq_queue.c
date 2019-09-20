@@ -5,7 +5,6 @@ struct seq_queue *init_seq_queue()
 	if(queue == NULL){
 		return NULL;
 	}
-	queue->size = 0;
 	queue->head = 0;
 	queue->tail = 0;
 	return queue;
@@ -25,7 +24,6 @@ bool push_seq_queue(struct seq_queue *queue, void *data)
 	}
 	queue->data[queue->tail] = data;
 	queue->tail++;
-	queue->size++;
 	return true;
 }
 
@@ -33,10 +31,9 @@ bool pop_seq_queue(struct seq_queue *queue)
 {
 	if(queue == NULL)
 		return false;
-	if(queue->size == 0)
+	if(queue->head == queue->tail)
 		return false;
 	queue->head++;
-	queue->size--;
 	return true;
 }
 
@@ -44,15 +41,16 @@ void *get_head_seq_queue(struct seq_queue *queue)
 {
 	if(queue == NULL)
 		return NULL;
-	if(queue->size == 0){
+	if(queue->head == queue->tail)
 		return NULL;
-	}
 	return queue->data[queue->head];
 }
 
 void *get_tail_seq_queue(struct seq_queue *queue)
 {
-	if(queue == NULL || queue->size == 0)
+	if(queue == NULL)
+		return NULL;
+	if(queue->head == queue->tail)
 		return NULL;
 	return queue->data[queue->tail-1];
 }
@@ -61,7 +59,7 @@ int get_length_seq_queue(struct seq_queue *queue)
 {
 	if(queue == NULL)
 		return -1;
-	return queue->size;
+	return queue->tail-queue->head;
 }
 
 void destroy_seq_queue(struct seq_queue *queue)

@@ -49,6 +49,9 @@ int main()
 	pop_seq_queue(queue);
 	push_seq_queue(queue, (void*)&p7);
 
+	int num = get_length_seq_queue(queue);
+	printf("========== num = %d ==========\n", num);
+
 	while (get_length_seq_queue(queue) > 0){
 		//获得队头元素
 		head = (struct person*)get_head_seq_queue(queue);

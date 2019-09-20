@@ -10,7 +10,6 @@
 
 struct seq_queue{
 	void *data[MAXSIZE];
-	int size;
 	int head;
 	int tail;
 };
