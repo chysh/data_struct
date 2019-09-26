@@ -71,6 +71,8 @@
         quick_sort(p…r) = quick_sort(p…q-1) + quick_sort(q+1…r)
         终止条件：
         p >= r
+    分区过程：
+ ![image]()
     代码实现见程序[quick_sort.c]
 
     
