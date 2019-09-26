@@ -64,6 +64,7 @@
     其核心思想是把下标为p到r的一组数据排序，选择p到r之间的任意一个数据作为pivot（分去点）。然后遍历p到r的数据，
     将小于pivot数放在左边，大于pivot的数据放在右边，pivot放在中间，经过这一步骤之后，p到r之间的数据就被分成了三部分，
     其中前面p到q-1是小于pivot的部分，中间是pivot，后面的q+1到r的部分大于pivot。
+![image](https://github.com/chysh/data_struct/blob/master/images/quick_sort_1.jpg)
     
     
     
