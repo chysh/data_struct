@@ -66,6 +66,7 @@
     其中前面p到q-1是小于pivot的部分，中间是pivot，后面的q+1到r的部分大于pivot。
 ![image](https://github.com/chysh/data_struct/blob/master/images/quick_sort_1.jpg)
     
+    根据分治、递归的处理思想，可以用递归排序下标从p到q-1和q+1到r之间的数据，直到区间缩小为1，则说明所有的数据都有序了。
     
     
     
