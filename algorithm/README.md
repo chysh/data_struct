@@ -67,6 +67,12 @@
 ![image](https://github.com/chysh/data_struct/blob/master/images/quick_sort_1.jpg)
     
     根据分治、递归的处理思想，可以用递归排序下标从p到q-1和q+1到r之间的数据，直到区间缩小为1，则说明所有的数据都有序了。
+        递推公式：
+        quick_sort(p…r) = quick_sort(p…q-1) + quick_sort(q+1…r)
+        终止条件：
+        p >= r
+    代码实现见程序[quick_sort.c]
+
     
     
     
