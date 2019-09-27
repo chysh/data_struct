@@ -131,6 +131,6 @@
     
     二分查找也叫折半查找，是针对一组有序的数据集合，查找思想有点类似分治思想。每次都通过跟区间的中间元素做对比，将待查找的区间
     缩小为原来的一半，直到找到要查找的元素，或者区间被缩小为0。
- ![image]()
+ ![image](https://github.com/chysh/data_struct/blob/master/images/binary_search_20190927141628.jpg)
     
     
