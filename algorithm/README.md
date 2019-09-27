@@ -94,7 +94,7 @@
 
     桶排序，顾名思义，会用到“桶”，核心思想是将要排序的数据分到几个有序的桶里，每个桶里的数据再单独进行排序。桶内排完序之后，
     再把每个桶里的数据按照顺序依次取出，组成的序列就是有序的了
-！[image](https://github.com/chysh/data_struct/blob/master/images/bucket_20190927093708.jpg)
+![image](https://github.com/chysh/data_struct/blob/master/images/bucket_20190927093708.jpg)
 
 
 
