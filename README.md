@@ -34,7 +34,7 @@
             一个比较简单的探测方法，线性探测（Linear Probing）： 当我们往散列表中插入数据时，如果某个数据经过散列函数散列
             之后，存储位置已经被占用了，我们就从当前位置开始，依次往后查找，看是否有空闲位置，直到找到为止。
             如下图（黄色的色块表示空闲位置，橙色的色块表示已经存储了数据。）
-            
+![image](https://github.com/chysh/data_struct/blob/master/images/xianxingtance.jpg)
 
 
          2.链表法
