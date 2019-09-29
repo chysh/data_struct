@@ -47,7 +47,7 @@
             以认定散列表中不存在这个数据。但是，如果这个空闲位置是我们后来删除的，就会导致原来的查找算法失效。本来存在的数
             据，会被认定为不存在。这个问题如何解决呢？我们可以将删除的元素特殊标记为 deleted。当线性探测查找的时候，遇到
             标记为 deleted 的空间，并不是停下来，而是继续往下探测。
-![image]()
+![image](https://github.com/chysh/data_struct/blob/master/images/xianxingtance2.jpg)
 
          2.链表法
             
