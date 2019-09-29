@@ -12,6 +12,6 @@
       散列思想：
       散列表用的是数组支持下标随机访问的数据特性，所以散列表其实就是一种数组的扩展，有数组演化而来，
       可以说，没有数组就没有散列表。
-     
+![image](https://github.com/chysh/data_struct/blob/master/images/hash.jpg)
      
  
