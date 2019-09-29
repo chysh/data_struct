@@ -74,7 +74,7 @@
          2.链表法
             链表法是一种更加常用的散列冲突解决办法，相比开放寻址法，它要简单很多。我们来看这个图，在散列表中，
             每个“桶（bucket）”或者“槽（slot）”会对应一条链表，所有散列值相同的元素我们都放到相同槽位对应的链表中。
-![image]()
+![image](https://github.com/chysh/data_struct/blob/master/images/lianbiaofa.jpg)
 
             
  
